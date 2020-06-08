@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19E287" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Movie" representedClassName="Movie" syncable="YES" codeGenerationType="class">
+        <attribute name="caminhoImagem" optional="YES" attributeType="String"/>
         <attribute name="capa" optional="YES" attributeType="Transformable"/>
-        <attribute name="idFilme" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="idFilme" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="nome" optional="YES" attributeType="String"/>
         <attribute name="nomeOriginal" optional="YES" attributeType="String"/>
         <attribute name="rating" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
@@ -10,6 +11,6 @@
         <attribute name="tipoMidia" optional="YES" attributeType="String"/>
     </entity>
     <elements>
-        <element name="Movie" positionX="-63" positionY="-18" width="128" height="148"/>
+        <element name="Movie" positionX="0.6796875" positionY="-408.62109375" width="128" height="163"/>
     </elements>
 </model>

@@ -37,22 +37,26 @@ class MovieDAO: NSObject {
     
     func saveMovie(dictionaryMovie:Dictionary<String, Any>) {
         let movie = Movie(context: contexto)
-        movie.idFilme = dictionaryMovie["id"] as? UUID
+        guard let idMovie = dictionaryMovie["id"] as? Int32 else { return }
+        movie.idFilme = idMovie
         movie.nome = dictionaryMovie["title"] as? String
         movie.sinopse = dictionaryMovie["overview"] as? String
         movie.rating = dictionaryMovie["vote_average"] as! Double
         movie.tipoMidia = dictionaryMovie["media_type"] as? String
+        movie.caminhoImagem = "https://image.tmdb.org/t/p/w500/" + "\(dictionaryMovie["poster_path"] as? String ?? "")"
         
         atualizaContexto()
     }
     
     func saveTVShow(dictionaryTVShow:Dictionary<String, Any>) {
         let tvSHOW = Movie(context: contexto)
-        tvSHOW.idFilme = dictionaryTVShow["id"] as? UUID
+        guard let idTVShow = dictionaryTVShow["id"] as? Int32 else { return }
+        tvSHOW.idFilme = idTVShow
         tvSHOW.nome = dictionaryTVShow["name"] as? String
         tvSHOW.sinopse = dictionaryTVShow["overview"] as? String
         tvSHOW.rating = dictionaryTVShow["vote_average"] as! Double
         tvSHOW.tipoMidia = dictionaryTVShow["media_type"] as? String
+        tvSHOW.caminhoImagem = "https://image.tmdb.org/t/p/w500/" + "\(dictionaryTVShow["poster_path"] as? String ?? "")"
         
         atualizaContexto()
     }
@@ -64,5 +68,13 @@ class MovieDAO: NSObject {
             print(error.localizedDescription)
         }
     }
+    
+//    func delete () {
+//        do {
+//            try contexto.delete
+//        } catch {
+//            print(error.localizedDescription)
+//        }
+//    }
 
 }
