@@ -1,0 +1,440 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D19A23E248DFEB400D91CBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D19A23D248DFEB400D91CBB /* AppDelegate.swift */; };
+		1D19A240248DFEB400D91CBB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D19A23F248DFEB400D91CBB /* SceneDelegate.swift */; };
+		1D19A242248DFEB400D91CBB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D19A241248DFEB400D91CBB /* ViewController.swift */; };
+		1D19A245248DFEB400D91CBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D19A243248DFEB400D91CBB /* Main.storyboard */; };
+		1D19A248248DFEB400D91CBB /* Cinematico.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1D19A246248DFEB400D91CBB /* Cinematico.xcdatamodeld */; };
+		1D19A24A248DFEB600D91CBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D19A249248DFEB600D91CBB /* Assets.xcassets */; };
+		1D19A24D248DFEB600D91CBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D19A24B248DFEB600D91CBB /* LaunchScreen.storyboard */; };
+		1DAEA1FF248E0EB8008CC6A7 /* TrendMediaAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAEA1FE248E0EB8008CC6A7 /* TrendMediaAPI.swift */; };
+		1DC772ED248E171D00CD9E04 /* MovieDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC772EC248E171D00CD9E04 /* MovieDAO.swift */; };
+		1DC772EF248E200700CD9E04 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC772EE248E200700CD9E04 /* Repository.swift */; };
+		68F8128642022500E01D1EAD /* Pods_Cinematico.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FF79747F7D59ADFC26E7569 /* Pods_Cinematico.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D19A23A248DFEB400D91CBB /* Cinematico.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cinematico.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D19A23D248DFEB400D91CBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1D19A23F248DFEB400D91CBB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1D19A241248DFEB400D91CBB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1D19A244248DFEB400D91CBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1D19A247248DFEB400D91CBB /* Cinematico.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Cinematico.xcdatamodel; sourceTree = "<group>"; };
+		1D19A249248DFEB600D91CBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1D19A24C248DFEB600D91CBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1D19A24E248DFEB600D91CBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DAEA1FE248E0EB8008CC6A7 /* TrendMediaAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendMediaAPI.swift; sourceTree = "<group>"; };
+		1DC772EC248E171D00CD9E04 /* MovieDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDAO.swift; sourceTree = "<group>"; };
+		1DC772EE248E200700CD9E04 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		7FF79747F7D59ADFC26E7569 /* Pods_Cinematico.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cinematico.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		87D4A801C08A45FD9C277C93 /* Pods-Cinematico.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cinematico.release.xcconfig"; path = "Target Support Files/Pods-Cinematico/Pods-Cinematico.release.xcconfig"; sourceTree = "<group>"; };
+		A87FB79DA8220FDFEC4B186C /* Pods-Cinematico.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cinematico.debug.xcconfig"; path = "Target Support Files/Pods-Cinematico/Pods-Cinematico.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D19A237248DFEB400D91CBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68F8128642022500E01D1EAD /* Pods_Cinematico.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		17689BA368D4F62D81115CA4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A87FB79DA8220FDFEC4B186C /* Pods-Cinematico.debug.xcconfig */,
+				87D4A801C08A45FD9C277C93 /* Pods-Cinematico.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		1D19A231248DFEB400D91CBB = {
+			isa = PBXGroup;
+			children = (
+				1D19A23C248DFEB400D91CBB /* Cinematico */,
+				1D19A23B248DFEB400D91CBB /* Products */,
+				17689BA368D4F62D81115CA4 /* Pods */,
+				CA103335BE785B3372214EDB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1D19A23B248DFEB400D91CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D19A23A248DFEB400D91CBB /* Cinematico.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1D19A23C248DFEB400D91CBB /* Cinematico */ = {
+			isa = PBXGroup;
+			children = (
+				1D19A23D248DFEB400D91CBB /* AppDelegate.swift */,
+				1D19A23F248DFEB400D91CBB /* SceneDelegate.swift */,
+				1D19A241248DFEB400D91CBB /* ViewController.swift */,
+				1D19A243248DFEB400D91CBB /* Main.storyboard */,
+				1D19A249248DFEB600D91CBB /* Assets.xcassets */,
+				1D19A24B248DFEB600D91CBB /* LaunchScreen.storyboard */,
+				1D19A24E248DFEB600D91CBB /* Info.plist */,
+				1D19A246248DFEB400D91CBB /* Cinematico.xcdatamodeld */,
+				1DAEA1FE248E0EB8008CC6A7 /* TrendMediaAPI.swift */,
+				1DC772EC248E171D00CD9E04 /* MovieDAO.swift */,
+				1DC772EE248E200700CD9E04 /* Repository.swift */,
+			);
+			path = Cinematico;
+			sourceTree = "<group>";
+		};
+		CA103335BE785B3372214EDB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7FF79747F7D59ADFC26E7569 /* Pods_Cinematico.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D19A239248DFEB400D91CBB /* Cinematico */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D19A251248DFEB600D91CBB /* Build configuration list for PBXNativeTarget "Cinematico" */;
+			buildPhases = (
+				8186F788F43606CCEFAA23FF /* [CP] Check Pods Manifest.lock */,
+				1D19A236248DFEB400D91CBB /* Sources */,
+				1D19A237248DFEB400D91CBB /* Frameworks */,
+				1D19A238248DFEB400D91CBB /* Resources */,
+				1F9601AC4458B319EBF59C7F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cinematico;
+			productName = Cinematico;
+			productReference = 1D19A23A248DFEB400D91CBB /* Cinematico.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1D19A232248DFEB400D91CBB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Rafael Teixeira Martins";
+				TargetAttributes = {
+					1D19A239248DFEB400D91CBB = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = 1D19A235248DFEB400D91CBB /* Build configuration list for PBXProject "Cinematico" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1D19A231248DFEB400D91CBB;
+			productRefGroup = 1D19A23B248DFEB400D91CBB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D19A239248DFEB400D91CBB /* Cinematico */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D19A238248DFEB400D91CBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D19A24D248DFEB600D91CBB /* LaunchScreen.storyboard in Resources */,
+				1D19A24A248DFEB600D91CBB /* Assets.xcassets in Resources */,
+				1D19A245248DFEB400D91CBB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F9601AC4458B319EBF59C7F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cinematico/Pods-Cinematico-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cinematico/Pods-Cinematico-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Cinematico/Pods-Cinematico-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8186F788F43606CCEFAA23FF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Cinematico-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D19A236248DFEB400D91CBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DC772EF248E200700CD9E04 /* Repository.swift in Sources */,
+				1D19A242248DFEB400D91CBB /* ViewController.swift in Sources */,
+				1D19A23E248DFEB400D91CBB /* AppDelegate.swift in Sources */,
+				1DAEA1FF248E0EB8008CC6A7 /* TrendMediaAPI.swift in Sources */,
+				1D19A240248DFEB400D91CBB /* SceneDelegate.swift in Sources */,
+				1DC772ED248E171D00CD9E04 /* MovieDAO.swift in Sources */,
+				1D19A248248DFEB400D91CBB /* Cinematico.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1D19A243248DFEB400D91CBB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1D19A244248DFEB400D91CBB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1D19A24B248DFEB600D91CBB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1D19A24C248DFEB600D91CBB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1D19A24F248DFEB600D91CBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1D19A250248DFEB600D91CBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1D19A252248DFEB600D91CBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A87FB79DA8220FDFEC4B186C /* Pods-Cinematico.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Cinematico/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = everis.Cinematico;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1D19A253248DFEB600D91CBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87D4A801C08A45FD9C277C93 /* Pods-Cinematico.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Cinematico/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = everis.Cinematico;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D19A235248DFEB400D91CBB /* Build configuration list for PBXProject "Cinematico" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D19A24F248DFEB600D91CBB /* Debug */,
+				1D19A250248DFEB600D91CBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1D19A251248DFEB600D91CBB /* Build configuration list for PBXNativeTarget "Cinematico" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D19A252248DFEB600D91CBB /* Debug */,
+				1D19A253248DFEB600D91CBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1D19A246248DFEB400D91CBB /* Cinematico.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1D19A247248DFEB400D91CBB /* Cinematico.xcdatamodel */,
+			);
+			currentVersion = 1D19A247248DFEB400D91CBB /* Cinematico.xcdatamodel */;
+			path = Cinematico.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1D19A232248DFEB400D91CBB /* Project object */;
+}
