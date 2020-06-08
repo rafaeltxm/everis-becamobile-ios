@@ -19,46 +19,46 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="bzv-Gw-o1y">
                                 <rect key="frame" x="16" y="20" width="343" height="627"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GJf-hi-OuV">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CINEMATICO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GJf-hi-OuV">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="Xou-Id-aaf"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="28"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="UDD-JU-WfN">
-                                        <rect key="frame" x="0.0" y="20.5" width="343" height="606.5"/>
+                                        <rect key="frame" x="0.0" y="60" width="343" height="567"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="aYi-01-6vx">
-                                            <size key="itemSize" width="128" height="195"/>
+                                            <size key="itemSize" width="166" height="255"/>
                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         </collectionViewFlowLayout>
                                         <cells>
                                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="celulaFilme" id="uiu-8M-oU2" customClass="MoviesCollectionViewCell" customModule="Cinematico" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="128" height="195"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="166" height="255"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="7St-7v-qsj">
-                                                    <rect key="frame" x="0.0" y="0.0" width="128" height="195"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="166" height="255"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jyC-NV-bis">
-                                                            <rect key="frame" x="0.0" y="174" width="128" height="21"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RVU-JU-eyx">
-                                                            <rect key="frame" x="0.0" y="0.0" width="128" height="175"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RVU-JU-eyx">
+                                                            <rect key="frame" x="0.0" y="0.0" width="166" height="255"/>
                                                         </imageView>
                                                     </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="RVU-JU-eyx" firstAttribute="top" secondItem="7St-7v-qsj" secondAttribute="top" id="gTc-lt-8np"/>
+                                                        <constraint firstAttribute="bottom" secondItem="RVU-JU-eyx" secondAttribute="bottom" id="hns-Vh-zMc"/>
+                                                        <constraint firstItem="RVU-JU-eyx" firstAttribute="leading" secondItem="7St-7v-qsj" secondAttribute="leading" id="lmi-Te-ozk"/>
+                                                        <constraint firstAttribute="trailing" secondItem="RVU-JU-eyx" secondAttribute="trailing" id="qMH-B3-xQA"/>
+                                                    </constraints>
                                                 </collectionViewCellContentView>
-                                                <size key="customSize" width="128" height="195"/>
+                                                <size key="customSize" width="166" height="255"/>
                                                 <connections>
                                                     <outlet property="imagemPoster" destination="RVU-JU-eyx" id="FPP-Bo-LCE"/>
-                                                    <outlet property="labelTitulo" destination="jyC-NV-bis" id="mPH-3M-eiu"/>
                                                 </connections>
                                             </collectionViewCell>
                                         </cells>
@@ -83,20 +83,76 @@
             </objects>
             <point key="canvasLocation" x="-42.399999999999999" y="47.226386806596707"/>
         </scene>
-        <!--View Controller-->
+        <!--Details Movie View Controller-->
         <scene sceneID="ttt-1R-It3">
             <objects>
-                <viewController id="qLW-yB-mqF" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="detailsMovie" id="qLW-yB-mqF" customClass="DetailsMovieViewController" customModule="Cinematico" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MDS-e6-isd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="JS9-lg-bs1">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HJG-RD-rdR">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="185"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="400" id="6m4-VC-hpj"/>
+                                            <constraint firstAttribute="width" constant="375" id="Kcg-CP-APJ"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tcr-tq-cgf">
+                                        <rect key="frame" x="0.0" y="185" width="375" height="50"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HQg-77-DoS">
+                                        <rect key="frame" x="0.0" y="235" width="375" height="391"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xn8-Og-4Xd">
+                                        <rect key="frame" x="0.0" y="626" width="375" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tlc-tW-XYk">
+                                        <rect key="frame" x="0.0" y="646.5" width="375" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9O2-ZV-Mu5">
+                                <rect key="frame" x="0.0" y="148" width="73" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Voltar"/>
+                                <connections>
+                                    <action selector="buttonBack:" destination="qLW-yB-mqF" eventType="touchUpInside" id="Swu-pA-1FX"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="JS9-lg-bs1" firstAttribute="top" secondItem="eTL-3B-Gdz" secondAttribute="top" id="8Y7-zB-pLW"/>
+                            <constraint firstItem="JS9-lg-bs1" firstAttribute="leading" secondItem="eTL-3B-Gdz" secondAttribute="leading" id="QRf-Ld-aoR"/>
+                            <constraint firstItem="JS9-lg-bs1" firstAttribute="trailing" secondItem="eTL-3B-Gdz" secondAttribute="trailing" id="SbT-I0-EXl"/>
+                            <constraint firstItem="JS9-lg-bs1" firstAttribute="bottom" secondItem="eTL-3B-Gdz" secondAttribute="bottom" id="zNR-RA-Thu"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="eTL-3B-Gdz"/>
                     </view>
+                    <connections>
+                        <outlet property="backgroudMovie" destination="HJG-RD-rdR" id="j9V-98-jmf"/>
+                        <outlet property="posterMovie" destination="tcr-tq-cgf" id="cZR-sF-Ooo"/>
+                        <outlet property="ratingMovie" destination="Xn8-Og-4Xd" id="hEf-wT-hTD"/>
+                        <outlet property="sinopseMovie" destination="tlc-tW-XYk" id="cqi-YI-srG"/>
+                        <outlet property="titleMovie" destination="HQg-77-DoS" id="Pvi-kB-uKV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZA-Wy-ytI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="642" y="47"/>
+            <point key="canvasLocation" x="640.79999999999995" y="46.326836581709152"/>
         </scene>
     </scenes>
 </document>

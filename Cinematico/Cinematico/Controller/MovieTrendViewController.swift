@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class MoviesTrendViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+class MoviesTrendViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate {
 
 
     @IBOutlet weak var collectionTrendMovies: UICollectionView!
@@ -51,11 +51,6 @@ class MoviesTrendViewController: UIViewController, UICollectionViewDataSource, U
         
         if let caminhoImagem = nomeFilme.caminhoImagem {
             celulaFilme.imagemPoster.load(url: URL(string: caminhoImagem)!)
-            celulaFilme.labelTitulo.text = "\(nomeFilme.nome ?? "")"
-            celulaFilme.layer.borderWidth = 0.5
-            celulaFilme.layer.borderColor = UIColor(red: 85.0/255.0, green: 85.0/255.0, blue: 85.00/255.0, alpha: 1).cgColor
-            celulaFilme.layer.cornerRadius = 5
-            return celulaFilme
         }
         
         return celulaFilme
@@ -63,6 +58,14 @@ class MoviesTrendViewController: UIViewController, UICollectionViewDataSource, U
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize{
         let larguraCelula = collectionView.bounds.width / 2
-        return CGSize(width:  larguraCelula - 10, height: 160)
+        return CGSize(width:  larguraCelula - 10, height: 235)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath){
+        let movie = listMoviesTrend[indexPath.item]
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: "detailsMovie") as! DetailsMovieViewController
+        controller.selectedMovie = movie
+        self.present(controller, animated: true, completion: nil)
     }
 }

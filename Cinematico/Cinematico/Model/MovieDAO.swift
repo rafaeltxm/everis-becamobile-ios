@@ -36,6 +36,9 @@ class MovieDAO: NSObject {
     }
     
     func saveMovie(dictionaryMovie:Dictionary<String, Any>) {
+        
+        
+        
         let movie = Movie(context: contexto)
         guard let idMovie = dictionaryMovie["id"] as? Int32 else { return }
         movie.idFilme = idMovie
@@ -44,6 +47,7 @@ class MovieDAO: NSObject {
         movie.rating = dictionaryMovie["vote_average"] as! Double
         movie.tipoMidia = dictionaryMovie["media_type"] as? String
         movie.caminhoImagem = "https://image.tmdb.org/t/p/w500/" + "\(dictionaryMovie["poster_path"] as? String ?? "")"
+        movie.caminhoImagemFundo = "https://image.tmdb.org/t/p/w500/" + "\(dictionaryMovie["backdrop_path"] as? String ?? "")"
         
         atualizaContexto()
     }
@@ -57,8 +61,20 @@ class MovieDAO: NSObject {
         tvSHOW.rating = dictionaryTVShow["vote_average"] as! Double
         tvSHOW.tipoMidia = dictionaryTVShow["media_type"] as? String
         tvSHOW.caminhoImagem = "https://image.tmdb.org/t/p/w500/" + "\(dictionaryTVShow["poster_path"] as? String ?? "")"
+        tvSHOW.caminhoImagemFundo = "https://image.tmdb.org/t/p/w500/" + "\(dictionaryTVShow["backdrop_path"] as? String ?? "")"
         
         atualizaContexto()
+    }
+    
+    func deleteMovies() {
+        let fetchRequest: NSFetchRequest<NSFetchRequestResult> = NSFetchRequest(entityName: "Movie")
+        let deleteRequest = NSBatchDeleteRequest(fetchRequest: fetchRequest)
+
+        do {
+            try contexto.execute(deleteRequest)
+        } catch let error as NSError {
+            // TODO: handle the error
+        }
     }
     
     func atualizaContexto() {
@@ -68,13 +84,4 @@ class MovieDAO: NSObject {
             print(error.localizedDescription)
         }
     }
-    
-//    func delete () {
-//        do {
-//            try contexto.delete
-//        } catch {
-//            print(error.localizedDescription)
-//        }
-//    }
-
 }

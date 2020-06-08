@@ -15,6 +15,7 @@
 		1D19A24D248DFEB600D91CBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D19A24B248DFEB600D91CBB /* LaunchScreen.storyboard */; };
 		1D7012B3248E33E200B3CB97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D7012B2248E33E200B3CB97 /* Main.storyboard */; };
 		1D7012B5248E37C900B3CB97 /* MoviesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7012B4248E37C900B3CB97 /* MoviesCollectionViewCell.swift */; };
+		1D7012B8248E57E300B3CB97 /* DetailsMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7012B7248E57E300B3CB97 /* DetailsMovieViewController.swift */; };
 		1DAEA1FF248E0EB8008CC6A7 /* TrendMediaAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAEA1FE248E0EB8008CC6A7 /* TrendMediaAPI.swift */; };
 		1DC772ED248E171D00CD9E04 /* MovieDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC772EC248E171D00CD9E04 /* MovieDAO.swift */; };
 		1DC772EF248E200700CD9E04 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC772EE248E200700CD9E04 /* Repository.swift */; };
@@ -32,6 +33,7 @@
 		1D19A24E248DFEB600D91CBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D7012B2248E33E200B3CB97 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		1D7012B4248E37C900B3CB97 /* MoviesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesCollectionViewCell.swift; sourceTree = "<group>"; };
+		1D7012B7248E57E300B3CB97 /* DetailsMovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsMovieViewController.swift; sourceTree = "<group>"; };
 		1DAEA1FE248E0EB8008CC6A7 /* TrendMediaAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendMediaAPI.swift; sourceTree = "<group>"; };
 		1DC772EC248E171D00CD9E04 /* MovieDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDAO.swift; sourceTree = "<group>"; };
 		1DC772EE248E200700CD9E04 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				1D19A241248DFEB400D91CBB /* MovieTrendViewController.swift */,
+				1D7012B7248E57E300B3CB97 /* DetailsMovieViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 				1DAEA1FF248E0EB8008CC6A7 /* TrendMediaAPI.swift in Sources */,
 				1D19A240248DFEB400D91CBB /* SceneDelegate.swift in Sources */,
 				1DC772ED248E171D00CD9E04 /* MovieDAO.swift in Sources */,
+				1D7012B8248E57E300B3CB97 /* DetailsMovieViewController.swift in Sources */,
 				1D19A248248DFEB400D91CBB /* Cinematico.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

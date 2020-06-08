@@ -11,6 +11,7 @@ import UIKit
 class Repository: NSObject {
     
     func recoveryTrendMedia(completion:@escaping(_ listMovies:Array<Movie>) -> Void) {
+        MovieDAO().deleteMovies()
         var movies = MovieDAO().recoveyMovies()
         TrendMediaAPI().recoveryTrendMovies {
             movies = MovieDAO().recoveyMovies()
