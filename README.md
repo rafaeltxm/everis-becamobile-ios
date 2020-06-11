@@ -1,3 +1,19 @@
+# Conclusão do Projeto
+
+Inicialmente tive que estudar um pouco a respeito de como seria a minha tomada de decisão a respeito da forma em que o aplicativo iria trablhar e como isso impactaria nas escolhas das camadas. 
+
+Por se tratar de uma informação dinâmica consumida de uma API de tendências semanais, optei de princípio não trabalhar com a camada DAO e deixar todos esses registros em memória, e com isso consumir a API ao carregar a tela de Home. 
+
+E penssando na praticidade da tela, mudei meu ponto de vista visando a utilização do aplicativo ao longo prazo, com a inteição de deixar o aplicativo mais inteligente, aplicando uma camada DAO utilizando o framework CoreData. 
+
+Dessa forma criei a entidade Movie e trabalhei com isso o gerenciamento desses registros da API, o meu objetivo ideal era através de um campo da entidade, setar se o filme estava em alta ou não, com isso só salvaria os novos registros ou atualizaria filmes que sairam de tendência. Entretanto, com meu conhecimento do framework CoreData tive algumas barreiras na execução dessa ideia e por final utilizei um refresh básico que sempre atualizava conforme a entidade.
+
+Na parte de layout, foi onde que fiquei mais tempo em desenvolvimento tendo como objetivo deixar o mais responsivo possível, mudei de ideia várias vezes na utilização ou não dos Stacks View Vertical/Horizontal, mas por se tratar de um aplicativo básico utilizei constraints pra lidar com esse controle.
+
+ ![Home](Preview App/home.png)
+ ![Details](Preview App/detailsMovie.png)
+ ![Icon](Preview App/appIcon.png)
+ 
 # Avaliação Beca Mobile iOS
 
 Criar um aplicativo que realize a listagem de filmes e exibição dos detalhes:
