@@ -53,12 +53,16 @@ class MoviesTrendViewController: UIViewController, UICollectionViewDataSource, U
             celulaFilme.imagemPoster.load(url: URL(string: caminhoImagem)!)
         }
         
+        celulaFilme.layer.borderWidth = 0.5
+        celulaFilme.layer.borderColor = UIColor(red: 85.0/255.0, green: 85.0/255.0, blue: 85.0/255.0, alpha: 1).cgColor
+        celulaFilme.layer.cornerRadius = 5
+        
         return celulaFilme
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize{
-        let larguraCelula = collectionView.bounds.width / 2
-        return CGSize(width:  larguraCelula - 10, height: 235)
+        let larguraCelula = collectionView.bounds.width / 3
+        return CGSize(width:  larguraCelula - 10, height: 180)
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath){

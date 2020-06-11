@@ -67,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				1D19A23C248DFEB400D91CBB /* Cinematico */,
+				1D38968924921A79008F30AF /* Delegate */,
 				1D19A23B248DFEB400D91CBB /* Products */,
 				17689BA368D4F62D81115CA4 /* Pods */,
 				CA103335BE785B3372214EDB /* Frameworks */,
@@ -88,15 +89,22 @@
 				1D7012B1248E30F700B3CB97 /* View */,
 				1DC772F1248E2F6700CD9E04 /* Controller */,
 				1DC772F0248E2EC200CD9E04 /* Model */,
-				1D19A23D248DFEB400D91CBB /* AppDelegate.swift */,
-				1D19A23F248DFEB400D91CBB /* SceneDelegate.swift */,
 				1D19A249248DFEB600D91CBB /* Assets.xcassets */,
+				1D7012B2248E33E200B3CB97 /* Main.storyboard */,
+				1D19A246248DFEB400D91CBB /* Cinematico.xcdatamodeld */,
 				1D19A24B248DFEB600D91CBB /* LaunchScreen.storyboard */,
 				1D19A24E248DFEB600D91CBB /* Info.plist */,
-				1D19A246248DFEB400D91CBB /* Cinematico.xcdatamodeld */,
-				1D7012B2248E33E200B3CB97 /* Main.storyboard */,
 			);
 			path = Cinematico;
+			sourceTree = "<group>";
+		};
+		1D38968924921A79008F30AF /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				1D19A23D248DFEB400D91CBB /* AppDelegate.swift */,
+				1D19A23F248DFEB400D91CBB /* SceneDelegate.swift */,
+			);
+			path = Delegate;
 			sourceTree = "<group>";
 		};
 		1D7012B1248E30F700B3CB97 /* View */ = {

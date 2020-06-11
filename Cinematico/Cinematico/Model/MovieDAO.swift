@@ -19,8 +19,8 @@ class MovieDAO: NSObject {
     
     func recoveyMovies() -> Array<Movie> {
         let pesquisaFilme:NSFetchRequest<Movie> = Movie.fetchRequest()
-        let ordenaPorNome = NSSortDescriptor(key: "nome", ascending: true)
-        pesquisaFilme.sortDescriptors = [ordenaPorNome]
+        let ordernaPorNome = NSSortDescriptor(key: "nome", ascending: true)
+        pesquisaFilme.sortDescriptors = [ordernaPorNome]
         
         gerenciadorDeResultados = NSFetchedResultsController(fetchRequest: pesquisaFilme, managedObjectContext: contexto, sectionNameKeyPath: nil, cacheName: nil)
         
@@ -36,16 +36,21 @@ class MovieDAO: NSObject {
     }
     
     func saveMovie(dictionaryMovie:Dictionary<String, Any>) {
-        
-        
-        
         let movie = Movie(context: contexto)
+        
         guard let idMovie = dictionaryMovie["id"] as? Int32 else { return }
         movie.idFilme = idMovie
+        
         movie.nome = dictionaryMovie["title"] as? String
         movie.sinopse = dictionaryMovie["overview"] as? String
-        movie.rating = dictionaryMovie["vote_average"] as! Double
         movie.tipoMidia = dictionaryMovie["media_type"] as? String
+        
+        guard let rating = dictionaryMovie["vote_average"] as? Double else { return }
+        movie.rating = rating
+        
+        guard let popularidade = dictionaryMovie["popularity"] as? Double else { return }
+        movie.popularidade = popularidade
+            
         movie.caminhoImagem = "https://image.tmdb.org/t/p/w500/" + "\(dictionaryMovie["poster_path"] as? String ?? "")"
         movie.caminhoImagemFundo = "https://image.tmdb.org/t/p/w500/" + "\(dictionaryMovie["backdrop_path"] as? String ?? "")"
         
@@ -54,12 +59,20 @@ class MovieDAO: NSObject {
     
     func saveTVShow(dictionaryTVShow:Dictionary<String, Any>) {
         let tvSHOW = Movie(context: contexto)
+        
         guard let idTVShow = dictionaryTVShow["id"] as? Int32 else { return }
         tvSHOW.idFilme = idTVShow
+        
         tvSHOW.nome = dictionaryTVShow["name"] as? String
         tvSHOW.sinopse = dictionaryTVShow["overview"] as? String
-        tvSHOW.rating = dictionaryTVShow["vote_average"] as! Double
         tvSHOW.tipoMidia = dictionaryTVShow["media_type"] as? String
+        
+        guard let rating = dictionaryTVShow["vote_average"] as? Double else { return }
+        tvSHOW.rating = rating
+        
+        guard let popularidade = dictionaryTVShow["popularity"] as? Double else { return }
+        tvSHOW.popularidade = popularidade
+        
         tvSHOW.caminhoImagem = "https://image.tmdb.org/t/p/w500/" + "\(dictionaryTVShow["poster_path"] as? String ?? "")"
         tvSHOW.caminhoImagemFundo = "https://image.tmdb.org/t/p/w500/" + "\(dictionaryTVShow["backdrop_path"] as? String ?? "")"
         
