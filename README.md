@@ -10,9 +10,13 @@ Dessa forma criei a entidade Movie e trabalhei com isso o gerenciamento desses r
 
 Na parte de layout, foi onde que fiquei mais tempo em desenvolvimento tendo como objetivo deixar o mais responsivo possível, mudei de ideia várias vezes na utilização ou não dos Stacks View Vertical/Horizontal, mas por se tratar de um aplicativo básico utilizei constraints pra lidar com esse controle.
 
- ![Home](Preview App/home.png)
- ![Details](Preview App/detailsMovie.png)
- ![Icon](Preview App/appIcon.png)
+Imagens da versão final:
+ * Home: 
+  - https://github.com/rafaeltxm/everis-becamobile-ios/blob/master/Preview%20App/home.png
+ * Detalhes:
+  - https://github.com/rafaeltxm/everis-becamobile-ios/blob/master/Preview%20App/detailsMovie.png
+ * Icon:
+  - https://github.com/rafaeltxm/everis-becamobile-ios/blob/master/Preview%20App/appIcon.png
  
 # Avaliação Beca Mobile iOS
 
